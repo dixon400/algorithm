@@ -1,0 +1,87 @@
+Sign Num
+
+Write a function solution that, given an array A of N integers (between −100 and 100), 
+returns the sign (−1, 0, 1) of the product of all the numbers in the array multiplied together. 
+Assume that N is between 1 and 1000.
+
+For example, given A = [1, −2, −3, 5], the function should return 1 (the multiplication equals 30).
+Given A = [1, 2, 3, −5] your function should return −1 (the multiplication equals −30).
+Given A = [1, 2, 0, −5] your function should return 0 (the multiplication equals 0).
+
+
+
+
+Reverse Word
+
+You are given a non-empty string S consisting of N characters. 
+In this problem we consider only strings that consist of lower-case English letters (a−z) and spaces.
+
+S can be divided into words by splitting it at the spaces and removing them. 
+We want to reverse every word in S.
+
+For example, given S = "we test coders", there are three words: "we", "test" and "coders". 
+Reversing the words gives "ew", "tset" and "sredoc".
+
+The goal is to return a string with every word in string S reversed and separated by spaces, 
+so the result in the above example should be "ew tset sredoc". 
+You can assume that if there are K spaces in S then there are exactly K + 1 words.
+
+Write a function:
+
+char * solution(char *S);
+
+that, given a non-empty string S consisting of N characters, returns the reversal of every word of S.
+
+For example, given S = "we test coders", the function should return "ew tset sredoc", as explained above.
+
+Write an efficient algorithm for the following assumptions:
+
+the length of string S is within the range [1..200,000];
+string S consists only of lower-case letters (a−z) and spaces.
+
+
+
+
+
+
+
+
+String ends with?
+Complete the solution so that it returns true if the first argument(string) passed in ends with the 2nd argument (also a string).
+
+solution('abc', 'bc') // returns true
+solution('abc', 'd') // returns false
+
+
+
+
+
+
+Email Address
+
+You are given a list of names of new employees in a company. You need to generate a company email address for each of them.
+The name of each person consists of two or three parts: a first name, an optional middle name, and a last name, separated by spaces. Each part can include only English letters (but the last name may additionally contain hyphens). The name of the company also consists only of English letters Each address must use the format "FirstMiddleLast @Company.com' where
+• First is the initial of the first name,
+• Middle is the initial of the middle name (but only if the person has a middle name,
+• Last is the last name, truncated to at most 8 initial letters,
+• Company is the company name.
+The address should be in lower case and should not contain hyphens.
+Note that hyphens should be removed before truncating the last name.
+Additionally, if more than one person would have the same email address, differentiate their addresses by adding subsequent integers (starting from the second address and number 2) before the " " sign. For example, if there are three people who would have the address " jd@company. com", they should be assigned addresses " ja@company.com", " jd2@company.com" and
+"ja3@company.com" respectively.
+Write a function:
+function solution(S, C) /
+that, given a string $ containing a list of names separated by the characters",”
+(a comma followed by a space)
+and a string C specifying the name of the company, returns a string containing the list of email addresses separated by the characters", " in the same order as they were in the input. Each entry on the list should be of the form Name ‹Emails"
+For example, given C = "Bxample" and string S as follows:
+"John Doe, Peter Parker, Mary Jane Watson-Parker, James Doe, John Elvis Doe, Jane Doe, Penny Parker" the function should return:
+"John Doe <jdoe@example.com>, Peter Parker <pparker@example.com, Mary Jane Watson-Parker <m jwatsonpalexample.com>, James Doe < jdoe2@example.com>.
+John Elvis Doe <jedoe@example.com, Jane Doe <jdoe3@example.com>, Penny Parker <pparker2@example.com"
+A
+Assume that:
+• the length of string S is within the range [3.. 1,000];
+• the length of string c is within the range it...1001;
+• string S consists only of letters (a-z and/or A-2), spaces, hyphens and commas;
+• string S contains valid names; no name appears more than once;
+• string C is made only of letters (a-z and/or A-2).

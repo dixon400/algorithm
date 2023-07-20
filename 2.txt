@@ -1,0 +1,46 @@
+
+
+write a function, which takes two arguments and returns a sequence. 
+First argument is a sequence of values, second is multiplier. 
+The function should filter all non-numeric values and multiply the rest by given multiplier.
+**multiplyAndFilter([1,2,3,4], 1.5), [1.5, 3, 4.5, 6]
+**multiplyAndFilter([1, null, function(){}, 2.5, 'string', 10, undefined, {}, []], 3), [3,7.5,30]
+
+
+
+Write a function that when given a URL as a string, 
+parses out just the domain name and returns it as a string. For example:
+
+* url = "http://github.com/carbonfive/raygun" -> domain name = "github"
+* url = "http://www.zombie-bites.com"         -> domain name = "zombie-bites"
+* url = "https://www.cnet.com"                -> domain name = cnet"
+
+
+
+
+I'm new to coding and now I want to get the sum of two arrays... 
+Actually the sum of all their elements. I'll appreciate for your help.
+
+P.S. Each array includes only integer numbers. Output is a number too.
+
+
+
+You are given an array(list) strarr of strings and an integer k. Your task is to return the first longest string consisting of k consecutive strings taken in the array.
+
+Examples:
+strarr = ["tree", "foling", "trashy", "blue", "abcdef", "uvwxyz"], k = 2
+
+Concatenate the consecutive strings of strarr by 2, we get:
+
+treefoling   (length 10)  concatenation of strarr[0] and strarr[1]
+folingtrashy ("      12)  concatenation of strarr[1] and strarr[2]
+trashyblue   ("      10)  concatenation of strarr[2] and strarr[3]
+blueabcdef   ("      10)  concatenation of strarr[3] and strarr[4]
+abcdefuvwxyz ("      12)  concatenation of strarr[4] and strarr[5]
+
+Two strings are the longest: "folingtrashy" and "abcdefuvwxyz".
+The first that came is "folingtrashy" so 
+longest_consec(strarr, 2) should return "folingtrashy".
+
+In the same way:
+longest_consec(["zone", "abigail", "theta", "form", "libe", "zas", "theta", "abigail"], 2) --> "abigailtheta"
